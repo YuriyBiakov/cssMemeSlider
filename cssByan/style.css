@@ -1,8 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 1920;
+}
+
+/* mobile 320x568, tablet 820x1180, desktop 1920×1080; */
+
+.accordeon {
+}
+.acc-item {
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+
+.acc-item-input {
+    display: none;
+}
+
+.acc-item-label {
+    display: block;
+}
 .acc-content {
     background-size: contain;
     background-repeat: no-repeat;
-    width: 380px;
-    height: 760px;
+    width: 320px;
+    height: 273.5px;
 }
 
 .acc-1-content {
