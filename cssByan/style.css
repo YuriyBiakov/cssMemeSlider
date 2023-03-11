@@ -1,0 +1,26 @@
+.acc-content {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 760px;
+}
+
+.acc-1-content {
+    background-image: url(./assets/img/1.png);
+}
+
+.acc-2-content {
+    background-image: url(./assets/img/2.png);
+}
+
+.acc-3-content {
+    background-image: url(./assets/img/3.png);
+}
+
+.acc-4-content {
+    background-image: url(./assets/img/4.png);
+}
+
+.acc-5-content {
+    background-image: url(./assets/img/5.png);
+}
