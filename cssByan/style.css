@@ -36,6 +36,19 @@ body {
     background-repeat: no-repeat;
     width: 320px;
     height: 273.5px;
+    display: none;
+}
+
+.acc-item-input:checked ~.acc-item-label {
+
+}
+
+.acc-item-input:checked ~.acc-content {
+    display: block;
+}
+
+.acc-item-input:hover ~.acc-content {
+    display: block;
 }
 
 .acc-1-content {
