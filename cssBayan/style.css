@@ -64,12 +64,6 @@ body {
         line-height: 1.5rem;
         font-weight: 500;
     }
-
-    .acc-content {
-        width: 16rem;
-        height: 13.5rem;
-        display: none;
-    }
 }
 
 .wrapper {
@@ -130,6 +124,14 @@ body {
     height: 27.35rem;
     display: none;
     cursor: pointer;
+}
+
+@media (max-width: 320px) {
+    .acc-content {
+        width: 16rem;
+        height: 13.5rem;
+        display: none;
+    }
 }
 
 .acc-item-input:checked ~.acc-item-label {
