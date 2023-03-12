@@ -22,6 +22,25 @@ body {
     color: #0a7ae2;
 }
 
+@media (hover: hover) {
+    .accordeon:hover .acc-item-icon {
+        display: block;
+    }
+
+    .acc-item-input:hover ~.acc-item-label,
+    .accordeon:hover {
+    color: black;
+    }
+
+    .acc-item-input:hover ~.acc-item-label .acc-item-icon {
+        background-image: url(assets/svg/close.svg);
+    }
+
+    .acc-item-label:hover .acc-content {
+        display: block;
+    }
+}
+
 @media (max-width: 1920px) {
     body {
     font-size: 2.5rem;
@@ -103,12 +122,7 @@ body {
     display: none;
 }
 
-.accordeon:hover .acc-item-icon {
-    display: block;
-}
-
 .acc-content {
-    display: block;
     background-size: contain;
     background-repeat: no-repeat;
     width: 32rem;
@@ -117,19 +131,15 @@ body {
     cursor: pointer;
 }
 
-.acc-item-input:checked ~.acc-item-label,
-.acc-item-input:hover ~.acc-item-label,
-.accordeon:hover {
+.acc-item-input:checked ~.acc-item-label {
     color: black;
 }
 
-.acc-item-input:checked ~.acc-item-label .acc-item-icon,
-.acc-item-input:hover ~.acc-item-label .acc-item-icon {
+.acc-item-input:checked ~.acc-item-label .acc-item-icon {
     background-image: url(assets/svg/close.svg);
 }
 
-.acc-item-input:checked ~.acc-item-label .acc-content,
-.acc-item-label:hover .acc-content {
+.acc-item-input:checked ~.acc-item-label .acc-content {
     display: block;
 }
 
