@@ -30,6 +30,7 @@ body {
     .acc-item-input:hover ~.acc-item-label,
     .accordeon:hover {
     color: black;
+    transition: 1s;
     }
 
     .acc-item-input:hover ~.acc-item-label .acc-item-icon {
@@ -133,6 +134,7 @@ body {
 
 .acc-item-input:checked ~.acc-item-label {
     color: black;
+    transition: 1s;
 }
 
 .acc-item-input:checked ~.acc-item-label .acc-item-icon {
