@@ -24,7 +24,7 @@ body {
 
 @media (hover: hover) {
     .accordeon:hover .acc-item-icon {
-        display: block;
+        opacity: 1;
     }
 
     .acc-item-input:hover ~.acc-item-label,
@@ -38,7 +38,8 @@ body {
     }
 
     .acc-item-label:hover .acc-content {
-        display: block;
+        height: 27.35rem;
+        opacity: 1;
     }
 }
 
@@ -109,28 +110,31 @@ body {
 }
 
 .acc-item-icon {
+    display: block;
     width: 1.5rem;
     height: 1.5rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(assets/svg/open.svg);
-    display: none;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .acc-content {
     background-size: contain;
     background-repeat: no-repeat;
     width: 32rem;
-    height: 27.35rem;
-    display: none;
+    height: 0;
+    opacity: 0;
     cursor: pointer;
+    transition: all 1s;
 }
 
 @media (max-width: 320px) {
     .acc-content {
         width: 16rem;
-        height: 13.5rem;
-        display: none;
+        height: 0;
+        opacity: 0;
     }
 }
 
@@ -144,7 +148,8 @@ body {
 }
 
 .acc-item-input:checked ~.acc-item-label .acc-content {
-    display: block;
+    height: 27.35rem;
+    opacity: 1;
 }
 
 .acc-1-content {
