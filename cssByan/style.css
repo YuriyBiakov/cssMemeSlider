@@ -29,8 +29,21 @@ body {
 }
 
 .acc-item-label {
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
+
+.acc-item-description {
+}
+
+.acc-item-icon {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/svg/open.svg);
+}
+
 .acc-content {
     background-size: contain;
     background-repeat: no-repeat;
@@ -41,6 +54,14 @@ body {
 
 .acc-item-input:checked ~.acc-item-label {
 
+}
+
+.acc-item-input:checked ~.acc-item-label .acc-item-icon {
+    background-image: url(assets/svg/close.svg);
+}
+
+.acc-item-input:hover ~.acc-item-label .acc-item-icon {
+    background-image: url(assets/svg/close.svg);
 }
 
 .acc-item-input:checked ~.acc-content {
