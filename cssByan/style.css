@@ -44,6 +44,11 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(assets/svg/open.svg);
+    display: none;
+}
+
+.accordeon:hover .acc-item-icon {
+    display: block;
 }
 
 .acc-content {
