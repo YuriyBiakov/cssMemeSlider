@@ -14,12 +14,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 2rem;
     font-family: 'Caveat', cursive;
     font-size: 2rem;
     line-height: 2.5rem;
     font-weight: 600; 
-    color: #0d3b66;
+    color: #0a7ae2;
 }
 
 .wrapper {
@@ -34,9 +34,13 @@ body {
 .accordeon {
     padding: 2rem;
     border: 0.1rem solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 .acc-item {
-    border-bottom: 0.1rem solid black;
+    border-bottom: 0.1rem solid rgb(180, 178, 178);
     margin-bottom: 1rem;
 }
 
@@ -47,15 +51,17 @@ body {
 .acc-item-label {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 .acc-item-description {
     color: inherit;
+    padding-left: 1rem;
 }
 
 .acc-item-icon {
-    width: 15px;
-    height: 15px;
+    width: 1.5rem;
+    height: 1.5rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(assets/svg/open.svg);
@@ -69,13 +75,14 @@ body {
 .acc-content {
     background-size: contain;
     background-repeat: no-repeat;
-    width: 320px;
-    height: 273.5px;
+    width: 32rem;
+    height: 27.35rem;
     display: none;
 }
 
 .acc-item-input:checked ~.acc-item-label,
-.acc-item-input:hover ~.acc-item-label {
+.acc-item-input:hover ~.acc-item-label,
+.accordeon:hover {
     color: black;
 }
 
@@ -85,7 +92,8 @@ body {
 }
 
 .acc-item-input:checked ~.acc-content,
-.acc-item-input:hover ~.acc-content {
+.acc-item-input:hover ~.acc-content,
+.acc-content:hover {
     display: block;
 }
 
