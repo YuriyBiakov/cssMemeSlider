@@ -120,6 +120,12 @@ body {
     transition: opacity 1s;
 }
 
+@media (max-width:820px) {
+    .acc-item-icon {
+        opacity: 1;
+    }
+}
+
 .acc-content {
     background-size: contain;
     background-repeat: no-repeat;
