@@ -59,18 +59,12 @@ body {
     color: black;
 }
 
-.acc-item-input:checked ~.acc-item-label .acc-item-icon {
-    background-image: url(assets/svg/close.svg);
-}
-
+.acc-item-input:checked ~.acc-item-label .acc-item-icon,
 .acc-item-input:hover ~.acc-item-label .acc-item-icon {
     background-image: url(assets/svg/close.svg);
 }
 
-.acc-item-input:checked ~.acc-content {
-    display: block;
-}
-
+.acc-item-input:checked ~.acc-content,
 .acc-item-input:hover ~.acc-content {
     display: block;
 }
