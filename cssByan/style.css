@@ -4,24 +4,40 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+
 body {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600; 
+    color: #0d3b66;
 }
 
 .wrapper {
-    max-width: 1920;
+    max-width: 192rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* mobile 320x568, tablet 820x1180, desktop 1920×1080; */
 
 .accordeon {
+    padding: 2rem;
+    border: 0.1rem solid black;
 }
 .acc-item {
-    border: 1px solid black;
-    margin-bottom: 25px;
+    border-bottom: 0.1rem solid black;
+    margin-bottom: 1rem;
 }
 
 .acc-item-input {
@@ -31,7 +47,6 @@ body {
 .acc-item-label {
     display: flex;
     justify-content: space-between;
-    color: blue;
 }
 
 .acc-item-description {
