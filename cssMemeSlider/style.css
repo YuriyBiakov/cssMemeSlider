@@ -8,6 +8,41 @@ html {
     font-size: 62.5%;
 }
 
+.slider{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-content{
+    width: 700px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide{
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    background-color: #0a7ae2;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: inherit;
+    height: inherit;
+}
+.slide:checked{
+    opacity: 1;
+    z-index: 1;
+}
+
 .slide-1 {
     background-image: url(./assets/img/1.jpg);
 }
@@ -28,7 +63,7 @@ html {
     background-image: url(./assets/img/5.jpg);
 }
 
-
+/* 
 body {
     min-height: 100vh;
     display: flex;
@@ -177,4 +212,4 @@ body {
     height: 27.35rem;
     opacity: 1;
 }
-
+ */
