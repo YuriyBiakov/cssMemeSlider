@@ -8,6 +8,11 @@ html {
     font-size: 62.5%;
 }
 
+.wrapper {
+    max-width: 800px;
+    padding: 0 30px;
+}
+
 .slider{
     display: flex;
     flex-direction: column;
@@ -38,7 +43,11 @@ html {
     width: inherit;
     height: inherit;
 }
-.slide:checked{
+#slide-1:checked ~ .slider-content > .slide-1,
+#slide-2:checked ~ .slider-content > .slide-2,
+#slide-3:checked ~ .slider-content > .slide-3,
+#slide-4:checked ~ .slider-content > .slide-4,
+#slide-5:checked ~ .slider-content > .slide-5{
     opacity: 1;
     z-index: 1;
 }
