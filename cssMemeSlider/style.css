@@ -8,6 +8,26 @@ html {
     font-size: 62.5%;
 }
 
+.slide-1 {
+    background-image: url(./assets/img/1.jpg);
+}
+
+.slide-2 {
+    background-image: url(./assets/img/2.jpg);
+}
+
+.slide-3 {
+    background-image: url(./assets/img/3.jpg);
+}
+
+.slide-4 {
+    background-image: url(./assets/img/4.jpg);
+}
+
+.slide-5 {
+    background-image: url(./assets/img/5.jpg);
+}
+
 
 body {
     min-height: 100vh;
@@ -158,22 +178,3 @@ body {
     opacity: 1;
 }
 
-.acc-1-content {
-    background-image: url(./assets/img/1.jpg);
-}
-
-.acc-2-content {
-    background-image: url(./assets/img/2.jpg);
-}
-
-.acc-3-content {
-    background-image: url(./assets/img/3.jpg);
-}
-
-.acc-4-content {
-    background-image: url(./assets/img/4.jpg);
-}
-
-.acc-5-content {
-    background-image: url(./assets/img/5.jpg);
-}
