@@ -72,6 +72,23 @@ html {
     background-image: url(./assets/img/5.jpg);
 }
 
+.slider-description-control-box {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.slide-description {
+    display: none;
+}
+
+#slide-1:checked ~ .slider-description-control-box .slide-1-description,
+#slide-2:checked ~ .slider-description-control-box .slide-2-description,
+#slide-3:checked ~ .slider-description-control-box .slide-3-description,
+#slide-4:checked ~ .slider-description-control-box .slide-4-description,
+#slide-5:checked ~ .slider-description-control-box .slide-5-description {
+    display: block;
+}
 /* 
 body {
     min-height: 100vh;
