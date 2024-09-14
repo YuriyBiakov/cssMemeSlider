@@ -62,6 +62,7 @@ html {
 @media (max-width:600px){
     .wrapper {
         max-width: 421px;
+        padding: 30px 15px;
     }
 
     .slider-content{
@@ -73,11 +74,23 @@ html {
 @media (max-width:450px){
     .wrapper {
         max-width: 316px;
+        padding: 30px 5px;
     }
 
     .slider-content{
         width: 270px;
         height: 230px;
+    }
+}
+
+@media (max-width:380px){
+    .wrapper {
+        max-width: 267px;
+    }
+
+    .slider-content{
+        width: 228px;
+        height: 194px;
     }
 }
 
@@ -164,6 +177,9 @@ html {
     }
     .slider-buttons {
         order: -1;
+    }
+    .slider-description{
+        align-self: start;
     }
 }
 
