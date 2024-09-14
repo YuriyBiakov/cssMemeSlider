@@ -11,6 +11,7 @@ html {
 .wrapper {
     max-width: 800px;
     padding: 0 30px;
+    margin: 0 auto;
 }
 
 .slider{
@@ -25,8 +26,8 @@ html {
 }
 
 .slider-content{
-    width: 700px;
-    height: 500px;
+    width: 768px;
+    height: 656px;
     position: relative;
     display: flex;
     align-items: center;
