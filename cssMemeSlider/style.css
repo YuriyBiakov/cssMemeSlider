@@ -101,7 +101,7 @@ html {
 
 .slider-visible-button{
     border: solid 2px rgb(41, 179, 243);
-    transition: border-color 0.5s;
+    transition: all 0.5s;
     border-radius: 50%;
     width: 15px;
     height: 15px;
@@ -126,6 +126,15 @@ html {
 #slide-5:checked ~ .slider-description-control-box .slider-buttons .slider-full-button:nth-child(-n+5) .slider-visible-button
 {
     background-color: rgb(41, 179, 243);
+}
+
+#slide-1:checked ~ .slider-description-control-box .slider-buttons .slider-full-button:nth-child(1):hover .slider-visible-button,
+#slide-2:checked ~ .slider-description-control-box .slider-buttons .slider-full-button:nth-child(-n+2):hover .slider-visible-button,
+#slide-3:checked ~ .slider-description-control-box .slider-buttons .slider-full-button:nth-child(-n+3):hover .slider-visible-button,
+#slide-4:checked ~ .slider-description-control-box .slider-buttons .slider-full-button:nth-child(-n+4):hover .slider-visible-button,
+#slide-5:checked ~ .slider-description-control-box .slider-buttons .slider-full-button:nth-child(-n+5):hover .slider-visible-button
+{
+    background-color: whitesmoke;
 }
 
 /* 
