@@ -12,7 +12,7 @@ html {
     max-width: 900px;
     padding: 30px 30px;
     margin: 5% auto;
-    background-color: black ;
+    background-color: #25282A;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +22,7 @@ html {
 .slider{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .slider-radio {
@@ -41,12 +42,13 @@ html {
     position: absolute;
     opacity: 0;
     z-index: 0;
-    background-color: #0a7ae2;
+    background-color: #71ABFF;
     background-size:contain;
     background-repeat: no-repeat;
     width: inherit;
     height: inherit;
 }
+
 #slide-1:checked ~ .slider-content .slide-1,
 #slide-2:checked ~ .slider-content .slide-2,
 #slide-3:checked ~ .slider-content .slide-3,
@@ -85,6 +87,23 @@ html {
 
 .slide-description {
     display: none;
+}
+
+.slider-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.slider-full-button{
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+.slider-visible-button{
+    border: solid 2px rgb(41, 179, 243);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
 }
 
 #slide-1:checked ~ .slider-description-control-box .slide-1-description,
