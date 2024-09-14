@@ -101,9 +101,14 @@ html {
 
 .slider-visible-button{
     border: solid 2px rgb(41, 179, 243);
+    transition: border-color 0.5s;
     border-radius: 50%;
     width: 15px;
     height: 15px;
+}
+
+.slider-full-button:hover .slider-visible-button{
+    border-color: whitesmoke;
 }
 
 #slide-1:checked ~ .slider-description-control-box .slide-1-description,
