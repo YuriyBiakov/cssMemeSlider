@@ -118,6 +118,16 @@ html {
 #slide-5:checked ~ .slider-description-control-box .slide-5-description {
     display: block;
 }
+
+#slide-1:checked ~ .slider-description-control-box .slider-buttons .slider-full-button:nth-child(1) .slider-visible-button,
+#slide-2:checked ~ .slider-description-control-box .slider-buttons .slider-full-button:nth-child(-n+2) .slider-visible-button,
+#slide-3:checked ~ .slider-description-control-box .slider-buttons .slider-full-button:nth-child(-n+3) .slider-visible-button,
+#slide-4:checked ~ .slider-description-control-box .slider-buttons .slider-full-button:nth-child(-n+4) .slider-visible-button,
+#slide-5:checked ~ .slider-description-control-box .slider-buttons .slider-full-button:nth-child(-n+5) .slider-visible-button
+{
+    background-color: rgb(41, 179, 243);
+}
+
 /* 
 body {
     min-height: 100vh;
