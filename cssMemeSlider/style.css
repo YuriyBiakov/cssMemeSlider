@@ -107,6 +107,7 @@
         height: inherit;
         transform: scale(0.8);
         transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+        border-radius: 15px;
     }
 
     #slide-1:checked ~ .slider-content .slide-1,
